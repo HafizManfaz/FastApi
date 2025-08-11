@@ -13,3 +13,6 @@ def load_data():
         data = json.load(f)
         return data
     
+@app.get('/view/')
+def all_patients():
+    return load_data()
